@@ -1,0 +1,19 @@
+# System / OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Edytory
+.vscode/
+.idea/
+
+# Node (na wypadek lokalnych narzędzi/skryptów)
+node_modules/
+npm-debug.log*
+
+# Zmienne środowiskowe / sekrety
+.env
+.env.*
+
+# Logi
+*.log
