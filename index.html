@@ -36,7 +36,7 @@
     </nav>
 
     <div class="site-header__aside">
-      <a class="phone" href="tel:+48880713352">+48 880 713 352</a>
+      <a class="phone demo-blur is-demo-disabled" aria-disabled="true" title="Wyłączone w wersji demo">+48 880 713 352</a>
       <button class="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu" data-burger>
         <span></span><span></span><span></span>
       </button>
@@ -53,7 +53,7 @@
       <li><a href="#kontakt">Kontakt</a></li>
     </ul>
   </nav>
-  <a class="phone phone--big" href="tel:+48880713352">+48 880 713 352</a>
+  <a class="phone phone--big demo-blur is-demo-disabled" aria-disabled="true" title="Wyłączone w wersji demo">+48 880 713 352</a>
 </div>
 
 <main id="tresc">
@@ -229,30 +229,32 @@
         <dl class="contact__list">
           <div>
             <dt>Adres</dt>
-            <dd>ul. Świderska 137<br>03-128 Warszawa (Tarchomin)</dd>
+            <dd><span class="demo-blur">ul. Świderska 137<br>03-128 Warszawa (Tarchomin)</span></dd>
           </div>
           <div>
             <dt>Godziny</dt>
-            <dd>Codziennie 9:00&ndash;22:00</dd>
+            <dd><span class="demo-blur">Codziennie 9:00&ndash;22:00</span></dd>
           </div>
           <div>
             <dt>Telefon</dt>
-            <dd><a href="tel:+48880713352">+48 880 713 352</a></dd>
+            <dd><a class="demo-blur is-demo-disabled" aria-disabled="true" title="Wyłączone w wersji demo">+48 880 713 352</a></dd>
           </div>
           <div>
             <dt>E-mail</dt>
-            <dd><a href="mailto:kontakt@lilysbistro.pl">kontakt@lilysbistro.pl</a></dd>
+            <dd><a class="demo-blur is-demo-disabled" aria-disabled="true" title="Wyłączone w wersji demo">kontakt@lilysbistro.pl</a></dd>
           </div>
         </dl>
 
-        <a class="btn btn--solid" href="tel:+48880713352"><span>Zarezerwuj stolik</span></a>
+        <a class="btn btn--solid is-demo-disabled" aria-disabled="true" title="Wyłączone w wersji demo"><span>Zarezerwuj stolik</span></a>
+        <p class="contact__demo-note">Dane kontaktowe i mapa są ukryte w&nbsp;tej wersji demo.</p>
       </div>
 
-      <div class="contact__map" data-reveal>
+      <div class="contact__map contact__map--demo" data-reveal>
         <iframe
-          title="Mapa — Lily's Bistro, ul. Świderska 137, Warszawa"
+          title="Mapa — wyłączona w wersji demo"
           src="https://maps.google.com/maps?q=Lily%27s%20Bistro%2C%20%C5%9Awiderska%20137%2C%20Warszawa&t=&z=16&ie=UTF8&iwloc=&output=embed"
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1" aria-hidden="true"></iframe>
+        <span class="contact__map-demo-badge">Mapa niedostępna<br>w wersji demo</span>
       </div>
     </div>
   </section>
@@ -275,21 +277,21 @@
     </nav>
 
     <div class="site-footer__meta">
-      <p>ul. Świderska 137<br>03-128 Warszawa</p>
-      <p>Codziennie 9:00&ndash;22:00</p>
-      <p><a href="tel:+48880713352">+48 880 713 352</a></p>
+      <p class="demo-blur">ul. Świderska 137<br>03-128 Warszawa</p>
+      <p class="demo-blur">Codziennie 9:00&ndash;22:00</p>
+      <p><a class="demo-blur is-demo-disabled" aria-disabled="true" title="Wyłączone w wersji demo">+48 880 713 352</a></p>
       <div class="site-footer__social">
-        <a href="https://www.instagram.com/lilysbistrowarszawa/" target="_blank" rel="noopener" aria-label="Instagram">
+        <a class="is-demo-disabled" aria-disabled="true" aria-label="Instagram" title="Wyłączone w wersji demo">
           <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
         </a>
-        <a href="https://www.facebook.com/lilysbistrowarszawa/" target="_blank" rel="noopener" aria-label="Facebook">
+        <a class="is-demo-disabled" aria-disabled="true" aria-label="Facebook" title="Wyłączone w wersji demo">
           <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M15 4h-2.5A3.5 3.5 0 0 0 9 7.5V10H6.5v3H9v7h3v-7h2.5l.5-3H12V7.7c0-.6.4-.9 1-.9h2z"/></svg>
         </a>
       </div>
     </div>
   </div>
   <div class="site-footer__bottom">
-    <p>&copy; <span data-year>2026</span> Lily's Bistro · ul. Świderska 137, Warszawa</p>
+    <p>&copy; <span data-year>2026</span> Lily's Bistro · <span class="demo-blur">ul. Świderska 137, Warszawa</span></p>
   </div>
 </footer>
 

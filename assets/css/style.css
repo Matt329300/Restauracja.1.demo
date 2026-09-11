@@ -978,3 +978,52 @@ main section[id] { scroll-margin-top: calc(var(--header-h) + 18px); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* =========================================================
+   TRYB DEMO — ukrywa dane kontaktowe i wyłącza powiązane
+   przyciski/linki na potrzeby pokazu klientowi.
+   Usuń tę sekcję (i klasy demo-blur / is-demo-disabled /
+   contact__map--demo w index.html), gdy strona ma pójść live.
+   ========================================================= */
+
+.demo-blur {
+  filter: blur(5px);
+  user-select: none;
+}
+
+.is-demo-disabled {
+  cursor: not-allowed;
+  opacity: .5;
+}
+a.is-demo-disabled:hover,
+.btn.is-demo-disabled:hover,
+.contact__map--link.is-demo-disabled:hover { color: inherit; border-color: inherit; background: inherit; transform: none; }
+.btn--solid.is-demo-disabled:hover { background: var(--green); color: #f4efe4; }
+
+.contact__demo-note {
+  margin-top: 1rem;
+  font-size: .82rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.contact__map--demo { position: relative; overflow: hidden; }
+.contact__map--demo iframe {
+  filter: blur(7px) saturate(.8);
+  pointer-events: none;
+}
+.contact__map-demo-badge {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(15, 29, 21, .35);
+  color: #f4efe4;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
