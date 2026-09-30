@@ -987,7 +987,7 @@ main section[id] { scroll-margin-top: calc(var(--header-h) + 18px); }
    ========================================================= */
 
 .demo-blur {
-  filter: blur(0.45em);
+  filter: blur(7px);
   user-select: none;
 }
 
