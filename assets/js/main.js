@@ -1,4 +1,4 @@
-/* Lily's Bistro — main.js
+/* Restauracja — main.js
    1) stan nagłówka po przewinięciu
    2) menu mobilne (hamburger + overlay)
 */
